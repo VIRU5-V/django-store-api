@@ -51,11 +51,6 @@ class PaymentVerfification(APIView):
         
         order_id = request.query_params.get('order_id')
 
-        order = Order.objects.get(number=order_id)
-        print(order.available_statuses())
-        order.set_status('Complete')
-        order.save()
-
         try:
             payment = paypalrestsdk.Payment.find(payment_id)
 
