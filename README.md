@@ -11,8 +11,8 @@ Django based CRM e-commerce RESTAPI.
 
 clone repo
 ```
-git clone https://github.com/VIRU5-V/django-store-api.git
-cd django-store-api
+git clone -b submission https://github.com/webcoupersorg/django-shop-restapi.git
+cd <project_directory>
 
 ```
 Install Dependencies
