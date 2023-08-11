@@ -37,6 +37,12 @@ python manage.py runserver
 to add product create superuser
 ```
 python manage.py createsuperuser
+
+```
+add countries for shipping
+```
+python manage.py oscar_populate_countries
+
 ```
 
 
