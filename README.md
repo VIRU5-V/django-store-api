@@ -7,6 +7,8 @@ Django based CRM e-commerce RESTAPI.
 - Admin should be notified when a new user registers ✅
 - Admin should be notified when an order is placed ✅
 
+This site was built using [api_demo](https://django-store-api-production.up.railway.app/api/)
+
 # To run this project open your terminal and write these commands
 
 clone repo
