@@ -19,7 +19,7 @@ def new_user_notification(sender, instance,update_fields, created, **kwargs):
 
 @receiver(post_save, sender=Order)
 def order_place(sender, instance, update_fields, created, **kwargs):
-    if instance.status == 'Paid':
+    if instance.status == 'Complete':
         subject = 'New order'
         message = f'User place a new order basket id: {instance.basket_id}'
         from_email = settings.EMAIL_HOST_USER
