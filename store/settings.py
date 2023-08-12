@@ -19,6 +19,7 @@ from oscar.defaults import *
 
 from dotenv import load_dotenv
 import os
+import json
 load_dotenv()
 print(os.getenv('EMAIL_BACKEND'))
 # Quick-start development settings - unsuitable for production
@@ -30,8 +31,7 @@ SECRET_KEY = 'django-insecure-w55sxu_d0*nc*muvo6b=^l-y)a1(n!7@gd-adn3c!yta1#%2tx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-store-api-production.up.railway.app']
-
+ALLOWED_HOSTS = [ host for host in json.loads(os.environ.get('ALLOWED_HOSTS', '[]')) ]
 
 # Application definition
 
